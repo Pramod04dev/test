@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/script.js"></script>
+    <title>Login</title>
+</head>
+
+<body class="loginpage">
+    <div class="login row">
+        <div class="col-md-6 col-12 w-50 h-100 left-block">
+            <p class="h1"><span class="badge badge-secondary">Voice Over</span></p>
+            <p class="h3">Let's Raise Our Voice</p>
+        </div>
+        <div class="col-md-6 col-12 w-50 h-100 right-block" id="right-login">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="emailLogin" placeholder="name@example.com">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" placeholder="********" id="passwordLogin" aria-describedby="passHelp">
+                <small id="passHelp" class="form-text text-muted">We'll never share
+                    your password with anyone
+                    else.</small>
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark" id="login">Login</button>
+            <button class="btn btn-outline-dark" id="register">Register</button>
+        </div>
+        <div class="col-md-6 col-12 w-50 h-100 right-block" id="right-register">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" id="fname" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="********" aria-describedby="emailHelp">
+                <small id="passHelp" class="form-text text-muted">We'll never share your password with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+
+                <button class="btn btn-outline-dark" id="register-form">Register</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-link" disabled>Already Have An
+                    Account?</button>
+                <button type="button" id="register-login" class="btn btn-link">Login</button><br>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    login();
+</script>
+
+</html>

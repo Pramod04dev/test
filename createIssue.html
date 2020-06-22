@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Voice Over</title>
+</head>
+
+<body class="createissue">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="./home.html">
+            <div class="h5">
+                <span class="badge badge-secondary">Voice Over</span>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-item nav-link active" href="./createIssue.html">New Issue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="./myissue.html">My Causes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="col-12 w-100 text-center">
+        <h1>Create Your Issue</h1>
+        <h4>Make other people aware of your problem</h4>
+        <div class="col-8 container-fluid text-left">
+            <form>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Title</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Title of the Cause">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Type of Issue</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Women Harrasment</option>
+                        <option>Education</option>
+                        <option>Politics</option>
+                        <option>Social Cause</option>
+                        <option>Help</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload Image</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+            </form>
+        </div>
+        <button type="submit" class="btn btn-secondary btn-lg w-25">Go!</button>
+    </div>
+</body>
+
+</html>

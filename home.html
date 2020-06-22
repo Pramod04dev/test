@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Voice Over</title>
+</head>
+
+<body class="homepage">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="./home.html">
+            <div class="h5">
+                <span class="badge badge-secondary">Voice Over</span>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-item nav-link " href="./createIssue.html">New Issue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link " href="./myissue.html">My Causes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="w-100 text-center" style="color: white;">
+        <h1>Raise Your Voice Against these Issues</h1>
+    </div>
+    <div class="card mb-12 blocks" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="./images/c1.jpg" class="card-img w-100 h-100" alt="..." />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Stop Child Labour</h5>
+                    <p class="card-text w-90">
+                        We should stop child labour. Stop Child Labour aims to eliminate all forms of child labour and to ensure quality full-time education for all children by creating child labour free zones
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Created By:- John Doe</small>
+                    </p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="w-50 float-left">
+                        <div class="row float-left">
+                            <div class="col-2">
+                                <img src="./images/person.png" alt="" height="23px" width="23px" />
+                            </div>
+                            <div class="col-10">
+                                <p>Mica, Shreya and 10 others support this</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-inline float-right text-right">
+                        <button type="button" class="btn btn-light btn-sm">
+                            <img src="./images/fb.png" alt="" height="20px" width="20px" />
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <img src="./images/twitter.png" alt="" height="20px" width="23px" />
+                        </button>
+                        <button type="button" id="takeStand" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal">
+                            Take A Stand
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-12 blocks" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="./images/c2.jpg" class="card-img w-100 h-100" alt="..." />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Humanitarian</h5>
+                    <p class="card-text w-90">
+                        Humanitarian aid is material and logistic assistance to people who need the help. We need to help all the people in need. As we all know a friend in need is a friend indeed.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 1 day ago</small>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Created By:- Micheal </small>
+                    </p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="w-50 float-left">
+                        <div class="row float-left">
+                            <div class="col-2">
+                                <img src="./images/person.png" alt="" height="23px" width="23px" />
+                            </div>
+                            <div class="col-10">
+                                <p>John, Alex and 19 others support this</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-inline float-right text-right">
+                        <button type="button" class="btn btn-light btn-sm">
+                            <img src="./images/fb.png" alt="" height="20px" width="20px" />
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <img src="./images/twitter.png" alt="" height="20px" width="23px" />
+                        </button>
+                        <button type="button" id="takeStand" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal">
+                            Take A Stand
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-12 blocks" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="./images/c3.png" class="card-img w-100 h-100" alt="..." />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Fight Against Diseases</h5>
+                    <p class="card-text w-90">
+                        Lets support the countries infected by Corona virus. We can help them by medicines, money food and any other valuable items.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 1 min ago</small>
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Created By:- Mike Tyson</small>
+                    </p>
+                </div>
+                <div class="card-footer w-100">
+                    <div class="w-50 float-left">
+                        <div class="row float-left">
+                            <div class="col-2">
+                                <img src="./images/person.png" alt="" height="23px" width="23px" />
+                            </div>
+                            <div class="col-10">
+                                <p>Max, Grey and 2 others support this</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-inline float-right text-right">
+                        <button type="button" class="btn btn-light btn-sm">
+                            <img src="./images/fb.png" alt="" height="20px" width="20px" />
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <img src="./images/twitter.png" alt="" height="20px" width="23px" />
+                        </button>
+                        <button type="button" id="takeStand" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal">
+                            Take A Stand
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#takeStand").click(function() {
+            $("#myModal").modal("show");
+        });
+    });
+</script>
+
+</html>
